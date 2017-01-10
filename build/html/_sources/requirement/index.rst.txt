@@ -10,10 +10,7 @@
    :maxdepth: 3
    :caption: Contents:
 
+   monitor/index
+   problem/index
+   compare/index
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
