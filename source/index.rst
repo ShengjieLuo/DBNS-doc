@@ -16,7 +16,7 @@ Welcome to Data-Based Network Security System(DBNS)
    design/index
    architecture/index
    module/index
-   installation/index
+   install/index
    test/index
    review/index
    other/index
