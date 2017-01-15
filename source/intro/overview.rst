@@ -27,7 +27,7 @@ Displayer Layer: Well-designed web UI for users to employ the analysis result
 |layer4|
 
 
-.. |layer1| image:: https://github.com/ShengjieLuo/DBNS/blob/master/doc/images/layer1.jpg
-.. |layer2| image:: https://github.com/ShengjieLuo/DBNS/blob/master/doc/images/layer2.jpg
-.. |layer3| image:: https://github.com/ShengjieLuo/DBNS/blob/master/doc/images/layer3.jpg
-.. |layer4| image:: https://github.com/ShengjieLuo/DBNS/blob/master/doc/images/layer4.jpg
+.. |layer1| image:: images/layer1.jpg
+.. |layer2| image:: images/layer2.jpg
+.. |layer3| image:: images/layer3.jpg
+.. |layer4| image:: images/layer4.jpg
