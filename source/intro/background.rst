@@ -1,3 +1,14 @@
 =================================================
-背景
+Background
 =================================================
+With the rapid development of the current Internet communications, backbone network server operation and maintenance work is increasingly difficult. The backbone server is the hub of the entire Internet. Once the backbone server is paralyzed, the network situation in a region is compromised. Thus, how to safely and effectively monitor and maintain the network equipment is directly related to the healthy development of the Internet environment.
+
+However, in the current situation, we found that the original operation and maintenance procedures can no longer fully deal with the challenges. This is because the network information has changed in the following aspects:
+
+The first point is the rapid expansion of the total amount of information, the current East China Education Backbone Network Server traffic has more than 10G per second, a lot of data in a short time through the server processing and was transferred. Ordinary network log analysis program can not adapt to such traffic requirements, and thus can not complete the effective monitoring and operation and maintenance work. Therefore, the most important requirements is to cope with large flow freely and smoothly.
+
+The second point is that the flow of information is not stable enough, the flow amount in the peak is 2 times larger than which in the low averagely, even more than 5 times some time. This brings new requirements to the scalability and scalability of the O & M system. If we use the peak flow to estimate the standard configuration of the system, then a lot of system resources are idle and wasted; else, if we use the low flow to estimate the standard configuration system, it is bound to fail in the peak flow. Therefore, the expansion of intelligent operation and maintenance system has been related to the attention of the technical staff.
+
+The third point is the increasingly complex properties of network information. Different from the former Internet era of simple messages, the current network information can be divided into data packets and monitoring log horizontally,and divided into communication layer, application Layer, data layer message information vertically. It put forward higher requirements for the intelligent operation and maintenance system; on one hand, we apply all kinds of information as much as possible in orider to  more scientifically and comprehensively monitor and manage the system. On the other hand, the new protocol provide attackers with more opportunities.
+
+Therefore, based on three obvious features within these years which includes grate amount, large flutation and complex property, we urgently need to combine the O&M system with latest large-scale data processing technology, gradually optimize Processing, extend processing performance, lean processing results, establish the next-generation  intelligent operation and maintenance systems. 
