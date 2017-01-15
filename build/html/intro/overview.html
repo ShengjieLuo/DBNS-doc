@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>系统架构 &mdash; DBNS 0.0.1 文档</title>
+  <title>Architecture &mdash; DBNS 0.0.1 文档</title>
   
 
   
@@ -34,9 +34,9 @@
               href="../genindex.html"/>
         <link rel="search" title="搜索" href="../search.html"/>
     <link rel="top" title="DBNS 0.0.1 文档" href="../index.html"/>
-        <link rel="up" title="简介" href="index.html"/>
+        <link rel="up" title="Overview" href="index.html"/>
         <link rel="next" title="系统术语表" href="glossary.html"/>
-        <link rel="prev" title="系统介绍" href="introduction.html"/> 
+        <link rel="prev" title="Introduction to the DBNS" href="introduction.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -87,19 +87,31 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">简介</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="background.html">背景</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduction.html">系统介绍</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">系统架构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="glossary.html">系统术语表</a></li>
-<li class="toctree-l2"><a class="reference internal" href="explanation.html">文档架构</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html">Introduction to the DBNS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Architecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#information-layer">Information Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#platform-layer">Platform Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analysis-layer">Analysis Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#display-layer">Display Layer</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Welcome to Data-Based Network Security System(DBNS)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">系统术语表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="explanation.html">文档架构</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">版本发布信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html">下载</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../feasibility/index.html">可行性分析文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">需求设计文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/index.html">系统设计文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">系统架构文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module/index.html">系统模块分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/index.html">部署与安装文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test/index.html">测试文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../review/index.html">开发总结</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">其他材料</a></li>
 </ul>
 
             
@@ -130,9 +142,9 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-          <li><a href="index.html">简介</a> &raquo;</li>
+          <li><a href="index.html">Overview</a> &raquo;</li>
       
-    <li>系统架构</li>
+    <li>Architecture</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -146,8 +158,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>系统架构<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="永久链接至标题">¶</a></h1>
+<p>This chapter is a short explanation to our DBNS system. The detailed description of the system architecture would be included in the following chapters.</p>
+<p>DBNS system is composed of 4 parts:</p>
+<div class="section" id="information-layer">
+<h2>Information Layer<a class="headerlink" href="#information-layer" title="永久链接至标题">¶</a></h2>
+<p>Information Layer: Collect the package from the NIC and resolve the package by PCAP components.
+image::https://github.com/ShengjieLuo/DBNS/blob/master/doc/images/layer1.jpg</p>
+</div>
+<div class="section" id="platform-layer">
+<h2>Platform Layer<a class="headerlink" href="#platform-layer" title="永久链接至标题">¶</a></h2>
+<p>Platform Layer: An online stream computing platform to distribute the package data into different database. Some online statitic process is finished here to cutoff the overload in following steps.</p>
+</div>
+<div class="section" id="analysis-layer">
+<h2>Analysis Layer<a class="headerlink" href="#analysis-layer" title="永久链接至标题">¶</a></h2>
+<p>Analysis Layer: Online analysis, which provides report each minute, and offline analysis, which provides report each hour are main part of this layer. DBNS takes a duty of network monitor and problem detection.</p>
+</div>
+<div class="section" id="display-layer">
+<h2>Display Layer<a class="headerlink" href="#display-layer" title="永久链接至标题">¶</a></h2>
+<p>Displayer Layer: Well-designed web UI for users to employ the analysis result</p>
+</div>
 </div>
 
 
@@ -160,7 +191,7 @@
         <a href="glossary.html" class="btn btn-neutral float-right" title="系统术语表" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="introduction.html" class="btn btn-neutral" title="系统介绍" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction to the DBNS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
